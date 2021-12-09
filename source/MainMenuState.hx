@@ -36,7 +36,7 @@ class MainMenuState extends MusicBeatState
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
-     private var char1:character = null
+     private var char1 character = null
 	override function create()
 	{
 		#if desktop
@@ -107,7 +107,7 @@ class MainMenuState extends MusicBeatState
 
 		FlxG.camera.follow(camFollowPos, null, 1);
          char 1 = new character(800, -140,) 'bf', true);
-		 char1.setupGrapicSize(Std.int(char1.width * 0.8)):
+		 char1.setupGrapicSize(Std.int(char1.width * 0.8));
          add(char1);
          char1.visible = false;
         var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
@@ -169,7 +169,7 @@ class MainMenuState extends MusicBeatState
               changeItem(-1);
               changeItem(1);
         
-              char1.dance() 
+              char1.dance();
               char1.updateHitbox();
               char1.visible = true;
      }
